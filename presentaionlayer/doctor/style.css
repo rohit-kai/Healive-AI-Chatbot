@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Notification Box */
+.notification-box {
+    background-color: #e9f7ff;
+    border-left: 5px solid #007BFF;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.notification-box h2 {
+    font-size: 18px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.notification-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Reminder Box */
+.reminder-box {
+    background-color: #fff8e1;
+    border-left: 5px solid #ff9800;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.reminder-box h2 {
+    font-size: 18px;
+    color: #ff6f00;
+    margin-bottom: 10px;
+}
+
+.reminder-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .notification-box, .reminder-box {
+        padding: 12px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .notification-box h2, .reminder-box h2 {
+        font-size: 16px;
+    }
+
+    .notification-box p, .reminder-box p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+}
